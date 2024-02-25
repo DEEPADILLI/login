@@ -1,0 +1,124 @@
+<html>
+    <head>
+        <title>Contribution Form</title>
+        <link rel="stylesheet" href="constyle.css">
+    </head>
+    <body>
+        <div class="container">
+            <center>
+            <form id="Form1">
+                
+                <h3>Site Information</h3>
+                <input type="text" placeholder="Site Name" required>
+                <input type="text" placeholder="City:" required>
+                <input type="text" placeholder="Country:" required>
+                <input type="text" placeholder="Cultural/Historic/Both:" required>
+
+                <div class="btn-box">
+                    <button type="button" id="Next1">Next</button>
+                </div>
+                </form>
+            </center>
+
+            <center>
+                <form id="Form2">
+                    <h3>Description</h3>
+                    <p>Briefly describe the site's significance and historical importance:</p>
+                    <textarea name="Description" placeholder="Type your Experience...."></textarea>
+                    
+                    
+    
+                    <div class="btn-box">
+                        <button type="button" id="Back1">Back</button>
+                        <button type="button" id="Next2">Next</button>
+                        
+                    </div>
+                    </form>
+                </center>
+
+                    <form id="Form3">
+                        <h3>Additional Information</h3>
+                        Upload Your Experience : <input type="file" onchange="readurl(this)" accept="Image/*">
+                        Cultural Significance :<textarea name="Cultural Significance" placeholder="Type your here...."></textarea>
+                        <p>Include any additional resources or references related to the site (links, articles, books, etc.):</p>
+                        <input type="file" onchange="readurl(this)" accept="Image/*">
+        
+                        <div class="btn-box">
+                            <button type="button" id="Back2">Back</button>
+                            <button type="button" id="Next3">Next</button>
+                            
+                        </div>
+                        </form>
+                      <form id="Form4">
+                        <h3>PERSONAL INFO</h3>
+                        <input type="text" placeholder="Name" required>
+                        <input type="text" placeholder="Email" required>
+                        <input type="text" placeholder="phone" required>
+        
+                        <div class="btn-box">
+                            <button type="button" id="Back3">Back</button>
+                            <button type="button" onload="triggerBtnClick()" id='btn' onclick="alert('Successfully Submited!')">Submit</button>
+                        </div>
+                        </form>
+                        <dvi class="step-row">
+                            <div id="progress"></div>
+                            <div class="step-col"><small>step 1</small></div>
+                            <div class="step-col"><small>step 2</small></div>
+                            <div class="step-col"><small>step 3</small></div>
+                            <div class="step-col"><small>step 4</small></div>
+                            
+                        </dvi>
+        </div>
+
+        <script>
+            var Form1=document.getElementById("Form1");
+            var Form2=document.getElementById("Form2");
+            var Form3=document.getElementById("Form3");
+            var Form4=document.getElementById("Form4");
+
+            var Next1 = document.getElementById("Next1");
+            var Next2 = document.getElementById("Next2");
+            var Next3 = document.getElementById("Next3");
+            var Back1 = document.getElementById("Back1");
+            var Back2 = document.getElementById("Back2");
+            var Back3 = document.getElementById("Back3");
+
+            var progress = document.getElementById("progress")
+            Next1.onclick = function(){
+                Form1.style.left = "-450px";
+                Form2.style.left = "40px";
+                progress.style.width = "150px";
+            }
+            Back1.onclick = function(){
+                Form1.style.left = "40px";
+                Form2.style.left = "450px";
+                progress.style.width = "80px";
+            }
+            Next2.onclick = function(){
+                Form2.style.left = "-450px";
+                Form3.style.left = "40px";
+                progress.style.width = "250px";
+            }
+            Back2.onclick = function(){
+                Form2.style.left = "40px";
+                Form3.style.left = "450px";
+                progress.style.width = "120px";
+            }
+            Next3.onclick = function(){
+                Form3.style.left = "-450px";
+                Form4.style.left = "40px";
+                progress.style.width = "415px";
+            }
+            Back3.onclick = function(){
+                Form3.style.left = "40px";
+                Form4.style.left = "450px";
+                progress.style.width = "240px";
+            }
+        
+        </script>
+        function triggerBtnClick(){
+            document.getElementById('btn').click()
+            
+        }
+    </body>
+</html>

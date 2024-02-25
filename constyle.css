@@ -1,0 +1,123 @@
+ *{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+ }
+ body{
+    background-image: linear-gradient(rgba(38, 11, 3, 0.8),rgba(0,0,0,0.8)),url(contbackground.jpg);
+    background-position: center;
+    background-size: cover;
+ }
+ .container{
+    width: 415px;
+    height: 545px;
+    margin: 8% auto;
+    background: #fff;
+    border-radius: 5px;
+    position: relative;
+    overflow: hidden;
+
+ }
+ h3{
+    text-align: center;
+    margin-bottom: 40px;
+    color:#000000;
+ }
+ .container form{
+    width: 280px;
+    position: absolute;
+    top: 100px;
+    left: 40px;
+    transition: 0.5s;
+ }
+ form input{
+    width: 100%;
+    padding: 10px 5px;
+    margin: 5px 0;
+    border-bottom: 1px solid #999;
+    border: 0;
+    outline: none;
+    background: transparent;
+ }
+::placeholder{
+    color: #000000;
+}
+ .btn-box{
+    width: 110%;
+    margin: 30px auto;
+    text-align: center;
+ }
+ form button{
+    width: 110px;
+    height: 35px;
+    margin: 0 10px;
+    background: linear-gradient(to right,#6b9600, #ffad06);
+    border-radius: 30px;
+    border: 0;
+    outline: none;
+    color: #060505;
+    cursor: pointer;
+ }
+ #Form2{
+    left: 450px;
+
+ }
+ #Form3{
+    left: 450px;
+ }
+ #Form4{
+   left: 450px;
+ }
+ .step-row{
+   width: 450px;
+   height: 40px;
+   margin: 0 auto;
+   display: flex;
+   align-items: center;
+   box-shadow: 0 -1px 5px -1px #000;
+   position: relative;
+ }
+ .step-col{
+    width: 120px;
+    text-align: center;
+    color: #03030333;
+    position: relative;
+ }
+ #progress{
+   position: absolute;
+   height: 100%;
+   width: 12px;
+   background: linear-gradient(to right,#6b9600, #ffad06);
+   transition: 1s;
+ }
+ #progress::after{
+   content: '';
+   height: 0;
+   width: 0;
+   border-top: 20px solid transparent;
+   border-bottom: 20px solid transparent;
+   position: absolute;
+   right: -20px;
+   top: 0;
+   border-left: 20px solid #ffad06;
+ }
+
+ #Form2 textarea{
+   width: 120%;
+   height: 150px;
+   padding: 15px 20px;
+   margin-bottom: 10px;
+   border-radius: 5px;
+   border: 1px solid #86b0b6;
+ }
+ #Form3 textarea{
+   width: 100%;
+   height: 90px;
+   padding: 15px 20px;
+   margin-bottom: 10px;
+   border-radius: 5px;
+   border: 1px solid #86b0b6;
+ }
+
+ 
+
