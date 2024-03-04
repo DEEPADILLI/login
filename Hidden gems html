@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+   <!-- font awesome cdn link  -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+   <!-- custom css file link  -->
+   <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+   
+<div class="container">
+
+   <h1 class="heading">our Hidden Gems</h1>
+
+   <div class="box-container">
+
+      <div class="box">
+         <div class="image">
+            <img src="images/img-1.jpg" alt="">
+         </div>
+         <div class="content">
+            <h3>Milan Cathedral</h3>
+            <p>Milan Cathedral,is a magnificent Gothic masterpiece located in the heart of Milan, Italy.!</p>
+            <a href="#" class="btn">read more</a>
+            <div class="icons">
+               <span> <i class="fas fa-user"></i> by cultquest </span>
+            </div>
+         </div>
+      </div>
+
+      <div class="box">
+         <div class="image">
+            <img src="images/img-2.jpg" alt="">
+         </div>
+         <div class="content">
+            <h3>Machu Picchu</h3>
+            <p>The sun rises over the ruins of Machu Picchu, evidence of the Inca Empire at the peak of its power.</p>
+            <a href="#" class="btn">read more</a>
+            <div class="icons">
+               <span> <i class="fas fa-user"></i> by cultquest </span>
+            </div>
+         </div>
+      </div>
+
+      <div class="box">
+         <div class="image">
+            <img src="images/img-3.jpg" alt="">
+         </div>
+         <div class="content">
+            <h3>Rakov kocjan Valley</h3>
+            <p>wonderful gorges, the Rakov Skocjan Valley will leave you breathless!!</p>
+            <a href="#" class="btn">read more</a>
+            <div class="icons">
+               <span> <i class="fas fa-user"></i> by cultquest </span>
+            </div>
+         </div>
+      </div>
+
+      <div class="box">
+         <div class="image">
+            <img src="images/img-4.jpg" alt="">
+         </div>
+         <div class="content">
+            <h3>Mercado del Puerto</h3>
+            <p>A historic market in Montevideo, Uruguay, is a vibrant hub of culinary delights and cultural experiences.!</p>
+            <a href="#" class="btn">read more</a>
+            <div class="icons">
+               <span> <i class="fas fa-user"></i> by cultquest </span>
+            </div>
+         </div>
+      </div>
+
+      <div class="box">
+         <div class="image">
+            <img src="images/img-5.jpg" alt="">
+         </div>
+         <div class="content">
+            <h3>Initiation Well</h3>
+            <p>Discover the enigmatic allure of Quinta da Regaleira in Sintra, Portugal, home to the mysterious Initiation Well</p>
+            <a href="#" class="btn">read more</a>
+            <div class="icons">
+               <span> <i class="fas fa-user"></i> by cultquest </span>
+            </div>
+         </div>
+      </div>
+
+      <div class="box">
+         <div class="image">
+            <img src="images/img-6.jpg" alt="">
+         </div>
+         <div class="content">
+            <h3>Petra</h3>
+            <p>Step back in time,explore Petra's breathtaking Treasury and intricate sandstone facades an architectural marvel of the ancient Nabateans.</p>
+            <a href="#" class="btn">read more</a>
+            <div class="icons">
+               <<span> <i class="fas fa-user"></i> by cultquest </span>
+            </div>
+         </div>
+      </div>
+
+      <div class="box">
+         <div class="image">
+            <img src="images/img-7.jpg" alt="">
+         </div>
+         <div class="content">
+            <h3>Fatehpur Sikri Fort</h3>
+            <p>Fatehpur Sikri Fort: A majestic blend of Mughal architecture and historical grandeur.</p>
+            <a href="#" class="btn">read more</a>
+            <div class="icons">
+              <span> <i class="fas fa-user"></i> by cultquest </span>
+            </div>
+         </div>
+      </div>
+
+      <div class="box">
+         <div class="image">
+            <img src="images/img-8.jpg" alt="">
+         </div>
+         <div class="content">
+            <h3>Hill Forts of Rajasthan</h3>
+            <p>Hill Forts of Rajasthan: Majestic strongholds echoing tales of valor and splendor!</p>
+            <a href="#" class="btn">read more</a>
+            <div class="icons">
+               <span> <i class="fas fa-user"></i> by cultquest </span>
+            </div>
+         </div>
+      </div>
+
+      <div class="box">
+         <div class="image">
+            <img src="images/img-9.jpg" alt="">
+         </div>
+         <div class="content">
+            <h3>Angkor Wat</h3>
+            <p>Angkor Wat: Iconic symbol of ancient Khmer civilization and architectural magnificence.!</p>
+            <a href="#" class="btn">read more</a>
+            <div class="icons">
+               <span> <i class="fas fa-user"></i> by cultquest </span>
+            </div>
+         </div>
+      </div>
+
+   </div>
+
+   <div id="load-more"> load more </div>
+
+</div>
+
+<script>
+
+let loadMoreBtn = document.querySelector('#load-more');
+let currentItem = 3;
+
+loadMoreBtn.onclick = () =>{
+   let boxes = [...document.querySelectorAll('.container .box-container .box')];
+   for (var i = currentItem; i < currentItem + 3; i++){
+      boxes[i].style.display = 'inline-block';
+   }
+   currentItem += 3;
+
+   if(currentItem >= boxes.length){
+      loadMoreBtn.style.display = 'none';
+   }
+}
+
+</script>
+
+</body>
+</html>
