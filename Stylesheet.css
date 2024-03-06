@@ -5,7 +5,7 @@
    */
 
   --united-nations-blue: hsl(214, 56%, 58%);
-  --bright-navy-blue: hsl(214, 57%, 51%);
+  --base-orange: hsl(30, 40%, 50%);
   --spanish-gray: hsl(0, 0%, 60%);
   --black-coral: hsl(225, 8%, 42%);
   --oxford-blue: hsl(208, 97%, 12%);
@@ -128,18 +128,18 @@ body { background: var(--white); }
 }
 
 .btn-primary {
-  background: var(--bright-navy-blue);
-  border-color: var(--bright-navy-blue);
+  background: var(--orange);
+  border-color: var(--orange);
 }
 
 .btn-primary:is(:hover, :focus) {
-  background: var(--yale-blue);
-  border-color: var(--yale-blue);
+  background: var(--orange);
+  border-color: var(--orange);
 }
 
 .btn-secondary { border-color: var(--white); }
 
-.btn-secondary:is(:hover, :focus) { background: hsla(0, 0%, 100%, 0.1); }
+.btn-secondary:is(:hover, :focus) { background: hsl(30, 40%, 50%); }
 
 .h1,
 .h2,
@@ -165,7 +165,7 @@ body { background: var(--white); }
 }
 
 .section-subtitle {
-  color: var(--bright-navy-blue);
+  color: var(--orange);
   font-size: var(--fs-5);
   text-transform: uppercase;
   font-family: var(--ff-montserrat);
@@ -227,7 +227,7 @@ body { background: var(--white); }
 .helpline-box .wrapper { display: none; }
 
 .helpline-box .icon-box {
-  background: var(--bright-navy-blue);
+  background: var(--bright-orange);
   padding: 6px;
   border-radius: 50%;
   color: var(--white);
@@ -333,7 +333,7 @@ body { background: var(--white); }
   text-transform: capitalize;
 }
 
-.navbar-link:is(:hover, :focus) { color: var(--bright-navy-blue); }
+.navbar-link:is(:hover, :focus) { color: var(--bright-orange); }
 
 .overlay {
   position: fixed;
@@ -397,7 +397,7 @@ body { background: var(--white); }
 \*-----------------------------------*/
 
 .tour-search {
-  background: var(--bright-navy-blue);
+  background: var(--orange);
   padding-block: var(--section-padding);
 }
 
@@ -471,7 +471,7 @@ body { background: var(--white); }
 
 
 .popular-card .card-rating {
-  background: var(--bright-navy-blue);
+  background: var(--orange);
   color: var(--white);
   position: absolute;
   top: 0;
@@ -570,12 +570,12 @@ body { background: var(--white); }
 }
 
 .meta-box > ion-icon {
-  color: var(--bright-navy-blue);
+  color: var(--orange);
   font-size: 13px;
 }
 
 .package-card .card-price {
-  background: var(--united-nations-blue);
+  background: var(--united-orange);
   color: var(--white);
   padding: 25px 20px;
   text-align: center;
@@ -616,10 +616,6 @@ body { background: var(--white); }
 
 .package .btn { margin-inline: auto; }
 
-
-
-
-
 /*-----------------------------------*\
  * #GALLERY
 \*-----------------------------------*/
@@ -656,7 +652,7 @@ body { background: var(--white); }
 \*-----------------------------------*/
 
 .cta {
-  background: var(--bright-navy-blue);
+  background: var(--orange);
   padding-block: var(--section-padding);
 }
 
@@ -809,7 +805,7 @@ address {
   right: 15px;
   width: 35px;
   height: 35px;
-  background: var(--bright-navy-blue);
+  background: var(--orange);
   color: var(--white);
   display: grid;
   place-items: center;
@@ -1171,7 +1167,7 @@ address {
 
   .header.active .navbar-link { color: var(--onyx); }
 
-  .header.active .navbar-link:is(:hover, :focus) { color: var(--bright-navy-blue); }
+  .header.active .navbar-link:is(:hover, :focus) { color: var(--orange); }
 
   .header.active .social-link {
     color: var(--onyx);
