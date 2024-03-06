@@ -27,7 +27,7 @@
          <div class="content">
             <h3>Milan Cathedral</h3>
             <p>Milan Cathedral,is a magnificent Gothic masterpiece located in the heart of Milan, Italy.!</p>
-            <a href="#" class="btn">read more</a>
+            <a href="#" class="btn" onclick="goToNextPage()">read more</a>
             <div class="icons">
                <span> <i class="fas fa-user"></i> by cultquest </span>
             </div>
@@ -41,7 +41,7 @@
          <div class="content">
             <h3>Machu Picchu</h3>
             <p>The sun rises over the ruins of Machu Picchu, evidence of the Inca Empire at the peak of its power.</p>
-            <a href="#" class="btn">read more</a>
+            <a href="#" class="btn" onclick="goToNextPage2()" >read more</a>
             <div class="icons">
                <span> <i class="fas fa-user"></i> by cultquest </span>
             </div>
@@ -55,7 +55,7 @@
          <div class="content">
             <h3>Rakov kocjan Valley</h3>
             <p>wonderful gorges, the Rakov Skocjan Valley will leave you breathless!!</p>
-            <a href="#" class="btn">read more</a>
+            <a href="#" class="btn" onclick="goToNextPage3()">read more</a>
             <div class="icons">
                <span> <i class="fas fa-user"></i> by cultquest </span>
             </div>
@@ -69,7 +69,7 @@
          <div class="content">
             <h3>Mercado del Puerto</h3>
             <p>A historic market in Montevideo, Uruguay, is a vibrant hub of culinary delights and cultural experiences.!</p>
-            <a href="#" class="btn">read more</a>
+            <a href="#" class="btn" onclick="goToNextPage4()">read more</a>
             <div class="icons">
                <span> <i class="fas fa-user"></i> by cultquest </span>
             </div>
@@ -83,7 +83,7 @@
          <div class="content">
             <h3>Initiation Well</h3>
             <p>Discover the enigmatic allure of Quinta da Regaleira in Sintra, Portugal, home to the mysterious Initiation Well</p>
-            <a href="#" class="btn">read more</a>
+            <a href="#" class="btn" onclick="goToNextPage5()" >read more</a>
             <div class="icons">
                <span> <i class="fas fa-user"></i> by cultquest </span>
             </div>
@@ -97,7 +97,7 @@
          <div class="content">
             <h3>Petra</h3>
             <p>Step back in time,explore Petra's breathtaking Treasury and intricate sandstone facades an architectural marvel of the ancient Nabateans.</p>
-            <a href="#" class="btn">read more</a>
+            <a href="#" class="btn" onclick="goToNextPage6()">read more</a>
             <div class="icons">
                <<span> <i class="fas fa-user"></i> by cultquest </span>
             </div>
@@ -111,7 +111,7 @@
          <div class="content">
             <h3>Fatehpur Sikri Fort</h3>
             <p>Fatehpur Sikri Fort: A majestic blend of Mughal architecture and historical grandeur.</p>
-            <a href="#" class="btn">read more</a>
+            <a href="#" class="btn" onclick="goToNextPage7()" >read more</a>
             <div class="icons">
               <span> <i class="fas fa-user"></i> by cultquest </span>
             </div>
@@ -125,7 +125,7 @@
          <div class="content">
             <h3>Hill Forts of Rajasthan</h3>
             <p>Hill Forts of Rajasthan: Majestic strongholds echoing tales of valor and splendor!</p>
-            <a href="#" class="btn">read more</a>
+            <a href="#" class="btn" onclick="goToNextPage8()" >read more</a>
             <div class="icons">
                <span> <i class="fas fa-user"></i> by cultquest </span>
             </div>
@@ -139,7 +139,7 @@
          <div class="content">
             <h3>Angkor Wat</h3>
             <p>Angkor Wat: Iconic symbol of ancient Khmer civilization and architectural magnificence.!</p>
-            <a href="#" class="btn">read more</a>
+            <a href="#" class="btn" onclick="goToNextPage9()" >read more</a>
             <div class="icons">
                <span> <i class="fas fa-user"></i> by cultquest </span>
             </div>
@@ -168,7 +168,51 @@ loadMoreBtn.onclick = () =>{
       loadMoreBtn.style.display = 'none';
    }
 }
-
+ function goToNextPage() {
+    // Specify the URL of the page you want to navigate to
+    var nextPageUrl = "hiddenart1.html";
+    window.location.href = nextPageUrl;
+  }
+  function goToNextPage2() {
+    // Specify the URL of the page you want to navigate to
+    var nextPageUrl2 = "hiddenart2.html";
+    window.location.href = nextPageUrl2;
+  }
+  function goToNextPage3() {
+    // Specify the URL of the page you want to navigate to
+    var nextPageUrl3 = "hiddenart3.html";
+    window.location.href = nextPageUrl3;
+  }
+  function goToNextPage4() {
+    // Specify the URL of the page you want to navigate to
+    var nextPageUrl4 = "hiddenart4.html";
+    window.location.href = nextPageUrl4;
+  }
+   function goToNextPage5() {
+    // Specify the URL of the page you want to navigate to
+    var nextPageUrl5 = "hiddenart5.html";
+    window.location.href = nextPageUrl5;
+  }
+   function goToNextPage6() {
+    // Specify the URL of the page you want to navigate to
+    var nextPageUrl6 = "hiddenart6.html";
+    window.location.href = nextPageUrl6;
+  }
+   function goToNextPage7() {
+    // Specify the URL of the page you want to navigate to
+    var nextPageUrl7 = "hiddenart7.html";
+    window.location.href = nextPageUrl7;
+  }
+   function goToNextPage8() {
+    // Specify the URL of the page you want to navigate to
+    var nextPageUrl8 = "hiddenart8.html";
+    window.location.href = nextPageUrl8;
+  }
+   function goToNextPage9() {
+    // Specify the URL of the page you want to navigate to
+    var nextPageUrl9 = "hiddenart9.html";
+    window.location.href = nextPageUrl9;
+  }
 </script>
 
 </body>
